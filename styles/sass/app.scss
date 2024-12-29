@@ -1,0 +1,59 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'back-office/back-office-app';
+@import '_fonts';
+@import '_variables';
+@import '_mixins';
+@import '_breakpoints';
+@import '_helpers';
+@import '_header';
+@import '_footer';
+@import '_register_page';
+@import 'market-place/_market-space';
+@import 'market-place/_market_cards';
+@import 'dauber/_blower';
+@import 'dauber/_ball';
+@import 'cards/_card';
+@import 'timer/_timer';
+@import 'winning/_winning-dialog';
+@import 'winning/_flying-prize';
+@import 'winning/_winning-patterns-animation-module';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('../../images/background.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+}
+
+#gameWrapper {
+  color: $mainFrontColour;
+
+  #gameContainer {
+    width: 90%;
+    margin: 2% auto 0 auto;
+    display: flex;
+    align-content: flex-start;
+
+    @include breakpointMaxWidth('xs') {
+      flex-wrap: wrap-reverse;
+    }
+
+    #leftGameScreen {
+      order: 1;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    #rightGameScreen {
+      order: 2;
+    }
+  }
+}

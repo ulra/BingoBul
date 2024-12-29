@@ -1,0 +1,56 @@
+@import "../fonts";
+@import "../variables";
+@import "../mixins";
+@import "components/actions";
+@import "components/button";
+@import "components/dialog";
+@import "components/form";
+@import "components/logo";
+@import "components/table";
+@import "components/logout";
+@import "components/back-office";
+
+html, body {
+  background: $backOfficeBackgroundColour;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $mainFontFamily;
+}
+
+.app-header {
+  background-color: $fifthColColour;
+  padding: 10px 5px;
+  color: $mainWheatColour;
+  font-size: 1.6em;
+}
+
+.login-form {
+  width: 350px;
+  margin: 100px auto;
+  text-align: center;
+
+  button {
+    float: right;
+    margin-top: 21px;
+  }
+
+  input {
+    width: 307px;
+  }
+}
+
+footer {
+  margin: 26px auto 0 auto;
+  font-size: 10px;
+  text-align: center;
+  color: lightslategray;
+}
+
+#errorMsg {
+  width: 300px;
+  margin: -33px auto 32px auto;
+  text-align: center;
+  color: red;
+}
